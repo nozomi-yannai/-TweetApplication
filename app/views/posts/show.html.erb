@@ -1,0 +1,4 @@
+<%= @post.content %>
+<%= link_to 'edit', edit_post_path(@post) %>
+<%= button_to 'destroy', post_path(@post), method: :delete %>
+<%= link_to 'Destroy（何でこれでできないのか分からない）', post_path(id: @post.id), data: { turbo_method: :delete, confirm: 'Are you sure?' } %>
